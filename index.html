@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal X-Omega | Intergalactic Spaceport</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <!--TERMINAL X-OMEGA-->
+      <div class="warp-overlay"></div>
+      <div class="header-content">
+        <h1>TERMINAL X-OMEGA</h1>
+        <p>GATEWAY TO THE OUTER RIM SECTOR</p>
+
+        <div class="status-bar">
+          <span>SYSTEM: ONLINE</span>
+          <span class="blink">TRAFFIC: HEAVY</span>
+          <span>TEMP: -270°C</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--Popular Flight Paths-->
+      <section id="destinations">
+        <h2>POPULAR FLIGHT PATHS</h2>
+
+        <div class="grid-wrapper">
+          <!--Destination Cards: -->
+          <!--Kepler-186f-->
+          <article>
+            <figure>
+              <img src="./assets/dest_kepler.jpeg" alt="Kepler-186f" />
+              <figcaption>
+                <h3>Kepler-186f</h3>
+                <p>
+                  A quiet green world with breathable air and stable seasons
+                </p>
+              </figcaption>
+            </figure>
+
+            <div class="card-details">
+              <span>class: Habitable</span>
+              <button>
+                <a href="#booking" class="book-btn">Book Passage</a>
+              </button>
+            </div>
+          </article>
+
+          <!--Titan Station-->
+          <article>
+            <figure>
+              <img src="./assets/dest_titan.jpeg" alt="Titan Station" />
+              <figcaption>
+                <h3>Titan Station</h3>
+                <p>Industrial megadocks, cargo lanes, and refinery skylines</p>
+              </figcaption>
+            </figure>
+
+            <div class="card-details">
+              <span>Class: Industrial</span>
+              <button>
+                <a href="#booking" class="book-btn">Book Passage</a>
+              </button>
+            </div>
+          </article>
+
+          <!--Nebula Resort-->
+          <article>
+            <figure>
+              <img src="./assets/dest_nebula.jpeg" alt="Nebula Resort" />
+              <figcaption>
+                <h3>Nebula Resort</h3>
+                <p>Luxury suites floating in the soft glow of ion clouds</p>
+              </figcaption>
+            </figure>
+
+            <div class="card-details">
+              <span> class: Luxury</span>
+              <button>
+                <a href="#booking" class="book-btn">Book Passage</a>
+              </button>
+            </div>
+          </article>
+
+          <!--Event Horizon-->
+          <article>
+            <figure>
+              <img src="./assets/dest_blackhole.jpeg" alt="Event Horizon" />
+              <figcaption>
+                <h3>Event Horizon</h3>
+                <p>High-risk zone near gravitational anomalies. Elite only</p>
+              </figcaption>
+            </figure>
+
+            <div class="card-details">
+              <span> class: Extreme</span>
+              <button>
+                <a href="#booking" class="book-btn">Book Passage</a>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- The Departure Board-->
+      <section id="schedule">
+        <div class="hologram-overlay">
+          <h2>LIVE DEPARTURE BOARD</h2>
+          <table>
+            <caption>
+              REAL-TIME WARP GATE STATUS
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Flight</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Gate</th>
+                <th scope="col">Time</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>XO-104</td>
+                <td>Kepler-186f</td>
+                <td>A7</td>
+                <td>18:40</td>
+                <td class="status-go">Boarding</td>
+              </tr>
+
+              <tr>
+                <td>TS-221</td>
+                <td>Titan Station</td>
+                <td>C3</td>
+                <td>19:10</td>
+                <td class="status-wait">Fueling</td>
+              </tr>
+
+              <tr>
+                <td>NR-808</td>
+                <td>Nebula Resort</td>
+                <td>B1</td>
+                <td>19:45</td>
+                <td class="status-delay">Delayed</td>
+              </tr>
+
+              <tr>
+                <td>EH-666</td>
+                <td>Event Horizon</td>
+                <td>D9</td>
+                <td>20:05</td>
+                <td class="status-stop">Cancelled</td>
+              </tr>
+
+              <tr>
+                <td>XO-118</td>
+                <td>Kepler-186f</td>
+                <td>A2</td>
+                <td>20:30</td>
+                <td class="status-go">On Time</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td colspan="5">SCANNING FOR INCOMING VESSELS...</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <!--The Booking Interface-->
+      <section id="booking">
+        <div class="kiosk-interface">
+          <h2>SELF-SERVICE TERMINAL</h2>
+
+          <form action="#" method="post">
+            <!--Identity-->
+            <fieldset>
+              <legend><h3>IDENTITY VERIFICATION</h3></legend>
+              <label for="Full-Designation">Full Designation</label>
+              <input
+                type="text"
+                id="Full-Designation"
+                name="Full Designation"
+                placeholder="Enter your name"
+              />
+              <!--Id Code -->
+              <label for="Id-Code">Id Code</label>
+              <input
+                type="text"
+                id="Id-Code"
+                name="Id-Code"
+                placeholder="Ender Your ID"
+                required
+              />
+            </fieldset>
+
+            <!--Flight Parameters-->
+            <fieldset>
+              <legend><h3>FLIGHT PARAMETERS</h3></legend>
+              <label for="destination">Destination</label>
+              <input
+                type="text"
+                id="destination"
+                name="destination"
+                list="planets"
+                placeholder="Select destination"
+                required
+              />
+              <datalist id="planets">
+                <option value="Kepler-186f"></option>
+                <option value="Titan Station"></option>
+                <option value="Nebula Resort"></option>
+                <option value="Event Horizon"></option>
+              </datalist>
+              <!--cabin case -->
+              <label for="Cabin-Class"> Cabin Class </label>
+              <select name="Cabin Class" id="Cabin-Class">
+                <option value="" disabled>Select Cabin Class</option>
+                <option value="Economy">Economy (Stasis Pod)</option>
+                <option value="Business">Business (Quarters)</option>
+                <option value="First">First (Zero-G Suite)</option>
+              </select>
+              <button type="submit" class="authorize-btn">
+                AUTHORIZE CREDIT TRANSFER
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        TERMINAL X-OMEGA // OPERATED BY GALACTIC FEDERATION // SAFETY NOT
+        GUARANTEED
+      </p>
+    </footer>
+
+    <!-- FULLSCREEN TRAVEL OVERLAY (hidden by default) -->
+    <div id="travelOverlay" class="travel-overlay" aria-hidden="true">
+      <div class="travel-bg"></div>
+
+      <div class="warp-lines" aria-hidden="true"></div>
+
+      <img
+        id="travelShip"
+        class="travel-ship"
+        src="./assets/pngegg (1).png"
+        alt="Time-travel vehicle"
+      />
+
+      <div id="travelMessage" class="travel-message" hidden>
+        <h2>MISSION COMPLETE</h2>
+        <p>Warp transfer successful. You have arrived at the selected orbit.</p>
+        <button id="travelBackBtn" type="button" class="travel-back-btn">
+          RETURN TO TERMINAL
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

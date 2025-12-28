@@ -6,7 +6,7 @@
 
 შექმენი რეპოზიტორიის რუთში `index.html` ფაილი და დაიწყე დავალების შესრულება
 
-Exercise: Building "Terminal X-Omega"
+Exercise: Building ""
 Objective: Create the semantic HTML structure for a futuristic Spaceport Terminal interface. Focus: Semantic tags, forms, tables, and specific class naming for styling hooks.
 
 Step 1: Project Setup
